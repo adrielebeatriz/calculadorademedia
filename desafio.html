@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Curso JavaScript Progressivo</title>
+ </head>
+ <style>
+     header {
+         background-color: lightgray;
+         width: 500px;
+     }
+         
+    #div {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: bisque;
+        color: red;
+        letter-spacing: 0.3rem;
+        font-size: medium;
+        width: 500px;
+       }
+</style>
+  <body>
+      <header> Calculdora de Média</header>
+    <div id="div">
+    Primeira nota <input id="nota1" type="number"> <br />
+    Segunda  nota <input id="nota2" type="number"> <br />
+    Terceira nota <input id="nota3" type="number"><br>
+    <button onclick="media()">Calcular Média</button>
+     </div>
+    <script type="text/javascript">
+
+        function media(){
+         var nota1 = parseFloat(document.getElementById("nota1").value);
+         var nota2 = parseFloat(document.getElementById("nota2").value);
+         var nota3 = parseFloat(document.getElementById("nota3").value);
+    
+         var media = (nota1 + nota2 +  nota3)/3 ;
+    
+         if(media >= 7)
+          if(media==10)
+           alert("Uau! Aprovado com distin��o");
+          else 
+           alert("Parabens, aprovado! Media "+media);
+         else
+          alert("Reprovado!")
+    
+        }
+     </script>
+    
+  </body>
+</html>
